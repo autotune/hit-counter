@@ -103,7 +103,8 @@ def add_header(r):
     return r
 
 if __name__ == '__main__':
-    ip = '127.0.0.1'
-    port = 8080
-    print("Site starting on http://" + ip + ":" + str(port))
+    ip = '0.0.0.0'
+    port = 80 
+    url = 'hitcounter.contrasting.org'
+    print("Site starting on http://" + url + ":" + str(port))
     app.run(host=ip, port=port)
